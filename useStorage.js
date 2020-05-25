@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { safeGet, safeSet } from './safeStorage';
 
 let pState = {};
-if (window) {
+if (typeof window === 'object') {
   pState = safeGet('state', {});
   window.addEventListener('beforeunload', () => {
     safeSet('state', pState);
