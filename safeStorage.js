@@ -1,3 +1,5 @@
+// in case you need to capture the errors just copy paste the code and uncomment the catch block
+
 export const safeGet = (key, defaultValue = {}) => {
   try {
     const serializedState = localStorage.getItem(key);
@@ -9,7 +11,7 @@ export const safeGet = (key, defaultValue = {}) => {
       return serializedState;
     }
   } catch (err) {
-    Sentry.captureException(err);
+    // Sentry.captureException(err);
 
     return defaultValue;
   }
