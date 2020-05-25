@@ -9,7 +9,7 @@ if (window) {
   });
 }
 
-const useStorage = (key, defaultValue, extra) => {
+const useStorage = (key, defaultValue) => {
   const [state, setState] = useState(() => pState[key] || defaultValue);
 
   useEffect(() => {
