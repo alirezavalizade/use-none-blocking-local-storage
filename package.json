@@ -1,0 +1,13 @@
+{
+  "name": "use-none-blocking-local-storage",
+  "main": "index.js",
+  "description": "Better localStorage",
+  "version": "1.0.0",
+  "repository": "https://github.com/alirezavalizade/use-none-blocking-local-storage.git",
+  "author": "alireza valizade <alirezavalizade0@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
